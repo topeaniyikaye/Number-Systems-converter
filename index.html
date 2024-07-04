@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Systems Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-circle"></div>
+    <div id="app">
+        <div class="header-group"> 
+        <header>
+            <h1>Number Systems 
+                Converter</h1>
+        </header>
+        <p class="header-text">Convert from one number base to another intuitively. Just choose the base base and pick the conversion base</p>
+    </div>
+        <main>
+            <img src="images/sticker 1.svg" alt="" class="sticker1">
+            <section id="contents">
+                <img src="images/sticker 2.svg" alt="" class="sticker2">
+                <div id="converter-group">
+            <form id="converter-form">
+                <div class="form-group">
+                    <label for="number">Number</label>
+                    <input type="text" id="number" required>
+                </div>
+               
+                <div class="form-group">
+                    <label for="fromBase">From Base</label>
+                    <select id="fromBase" required>
+                        <option value="decimal">Decimal</option>
+                        <option value="binary">Binary</option>
+                        <option value="hexadecimal">Hexadecimal</option>
+                        <option value="octal">Octal</option>
+                    </select>
+                </div>
+                <img src="images/icon to.svg" alt="" class="to-icon">
+                <div class="form-group">
+                    <label for="toBase">To Base</label>
+                    <select id="toBase" required>
+                        <option value="decimal">Decimal</option>
+                        <option value="binary">Binary</option>
+                        <option value="hexadecimal">Hexadecimal</option>
+                        <option value="octal">Octal</option>
+                    </select>
+                </div>
+                <button type="submit">Convert</button>
+            </form>
+            <div id="result" class="result">
+                <h3>Result</h3>
+                <h2> <span id="resultValue"></span></h2>
+            </div>
+        </div>
+            <div id="history" class="history">
+                <div class="orange-background"></div>
+                <h3>Conversion History</h3>
+                <ul id="historyList"></ul>
+            </div>
+        </section>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
