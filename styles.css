@@ -24,10 +24,13 @@ body {
     background-image: url('images/stars.svg'), url('images/bckground\ circles.svg');
     background-position: 80% 200px, top right;
     background-repeat: no-repeat, no-repeat;
-    
+   
    
 }
-
+main{
+    max-width: 1400px;
+    margin: auto;
+}
 .background-circle{
     background-color: #4d4c51d5;
     width: 400px;
