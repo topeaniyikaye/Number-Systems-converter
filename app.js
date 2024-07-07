@@ -10,7 +10,7 @@ document.getElementById('converter-form').addEventListener('submit', async (e) =
 
     try {
         // Send a POST request to the server to perform the conversion
-        const response = await fetch('http://localhost:3002/convert', {
+        const response = await fetch('/convert', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -39,7 +39,7 @@ document.getElementById('converter-form').addEventListener('submit', async (e) =
 async function fetchHistory() {
     try {
         // Send a GET request to the server to fetch history
-        const response = await fetch('http://localhost:3002/history');
+        const response = await fetch('/history');
         // Parse the response JSON data
         const history = await response.json();
         // Get the history list element
