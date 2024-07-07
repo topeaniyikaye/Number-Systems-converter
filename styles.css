@@ -205,7 +205,6 @@ box-sizing: border-box;
 /* Auto layout */
 display: flex;
 flex-direction: column;
-justify-content: center;
 padding: 32px;
 gap: 12px;
 isolation: isolate;
