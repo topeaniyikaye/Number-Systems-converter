@@ -24,8 +24,12 @@ body {
     background-image: url('images/stars.svg'), url('images/bckground\ circles.svg');
     background-position: 80% 200px, top right;
     background-repeat: no-repeat, no-repeat;
-    
    
+   
+}
+main{
+    max-width: 1400px;
+    margin: auto;
 }
 
 .background-circle{
@@ -202,7 +206,6 @@ box-sizing: border-box;
 /* Auto layout */
 display: flex;
 flex-direction: column;
-justify-content: center;
 padding: 32px;
 gap: 12px;
 isolation: isolate;
@@ -229,7 +232,7 @@ border-color: #A7A6AB;
     /* Frame 10 */
 padding: 12px;
 width: auto;
-height: 43px;
+min-height: 43px;
 background: rgba(92, 92, 92, 0.5);
 border-radius: 4px;
 
@@ -381,6 +384,7 @@ transform: rotate(15deg);
     }
     h1{
         margin-bottom: 16px;
+        font-size: 3rem;
     }
 
     header {
@@ -422,4 +426,12 @@ transform: rotate(15deg);
         font-size: 16px;
         height: 44px;
     }
+
+    .result h2 {
+        min-width: 100%;
+        font-size: 3em;
+        word-wrap: break-word;
+        line-height: normal;
+        
+        }
 }
